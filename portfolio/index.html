@@ -18,19 +18,51 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* CSS Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .scale-on-hover:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        /* Background Animation */
+        body {
+            background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+            animation: gradient 5s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-dark">Naweed</span>Syed</h1>
+            <h1 class="m-0 display-5"><span class="text-dark">Naweed</span> Syed</h1>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -81,13 +113,13 @@
                 </div>
                 <div class="col-lg-7 text-center text-lg-left">
                     <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Naweed Syed</h1>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #f9f7f7;">Naweed Syed</h1>
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Greemus Software Technologies, Java Full Stack Developer, Front End Developer, Back End Developer, Apps Developer</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
                         <a href="" class="btn btn-outline-light mr-5">Download CV</a>
                         <button type="button" class="btn-play" data-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            data-src="https://www.youtube.com/embed/" data-target="#videoModal">
                             <span></span>
                         </button>
                         <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5>
@@ -104,7 +136,7 @@
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+                <h1 class="position-absolute text-uppercase text-dark">About Me</h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
@@ -112,16 +144,16 @@
                 </div>
                 <div class="col-lg-7">
                     <h3 class="mb-4">Java Full Stack Developer</h3>
-                    <p>I'm an ambitious and dedicated Java Full Stack Developer, passionate about building scalable, secure, and efficient applications. With a strong foundation in Java, I'm excited to bring my skills and enthusiasm to the table, delivering high-quality solutions that meet the needs of clients.</p>
+                    <p style="color: white;">I'm an ambitious and dedicated Java Full Stack Developer, passionate about building scalable, secure, and efficient applications. With a strong foundation in Java, I'm excited to bring my skills and enthusiasm to the table, delivering high-quality solutions that meet the needs of clients.</p>
                     <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Naweed Syed</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">2 January 2003</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Bachelor</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">1 Year</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+916302101312</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">naweed9syed@gmail.com</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Vijayawada, AP.</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-light">Naweed Syed</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-light">2 January 2003</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-light">Bachelor</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-light">1 Year</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-light">+916302101312</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-light">naweed9syed@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-light">Vijayawada, AP.</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-light">Available</span></h6></div>
                     </div>
                     <a href="" class="btn btn-outline-danger mr-4">Hire Me</a>
                     <a href="" class="btn btn-outline-danger">Learn More</a>
@@ -137,17 +169,17 @@
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+                <h1 class="position-absolute text-uppercase text-dark">Education & Expericence</h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h3 class="mb-4">My Education</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <i class="far fa-dot-circle text-danger position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Bachelor In CSE</h5>
                             <p class="mb-2"><strong>JNTUK University</strong> | <small>2020 - 2024</small></p>
-                            <p>I'm a fresh graduate in Computer Science and Engineering (CSE) from Jawaharlal Nehru Technological University Kakinada (JNTUK), having completed my Bachelor's degree in 2020-2024. With a strong foundation in computer science fundamentals, I'm excited to embark on a career as a Java Full Stack Developer.</p>
+                            <p style="color: white;">I'm a fresh graduate in Computer Science and Engineering (CSE) from Jawaharlal Nehru Technological University Kakinada (JNTUK), having completed my Bachelor's degree in 2020-2024. With a strong foundation in computer science fundamentals, I'm excited to embark on a career as a Java Full Stack Developer.</p>
                         </div>
                     </div>
                 </div>
@@ -155,10 +187,10 @@
                     <h3 class="mb-4">My Expericence</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <i class="far fa-dot-circle text-danger position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Associate Software Engineer</h5>
                             <p class="mb-2"><strong>Greemus Software Technologies</strong> | <small>2024 - Present</small></p>
-                            <p>I'm currently working as an Associate Software Engineer at Greemus Software Technologies, where I'm responsible for designing, developing, and deploying scalable and efficient software solutions. As a key member of the team, I'm involved in various projects that leverage my skills in Java full-stack development.</p>
+                            <p style="color: white;">I'm currently working as an Associate Software Engineer at Greemus Software Technologies, where I'm responsible for designing, developing, and deploying scalable and efficient software solutions. As a key member of the team, I'm involved in various projects that leverage my skills in Java full-stack development.</p>
                         </div>
                     </div>
                 </div>
@@ -173,7 +205,7 @@
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+                <h1 class="position-absolute text-uppercase text-dark">My Skills</h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -245,7 +277,7 @@
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
+                <h1 class="position-absolute text-uppercase text-dark">My Services</h1>
             </div>
             <div class="row pb-3">
                 <div class="col-lg-4 col-md-6 text-center mb-5">
@@ -253,7 +285,7 @@
                         <i class="fa fa-2x fa-laptop service-icon bg-dark text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Web Design</h4>
                     </div>
-                    <p>Web design refers to the process of creating and building websites, including the layout, user interface, and visual aspects of a website. It involves a combination of technical skills, such as HTML, CSS, and JavaScript, as well as creative skills, such as graphic design and user experience (UX) design.</p>
+                    <p style="color: white;">Web design refers to the process of creating and building websites, including the layout, user interface, and visual aspects of a website. It involves a combination of technical skills, such as HTML, CSS, and JavaScript, as well as creative skills, such as graphic design and user experience (UX) design.</p>
                     <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center mb-5">
@@ -261,7 +293,7 @@
                         <i class="fa fa-2x fa-laptop-code service-icon bg-dark text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Web Development</h4>
                     </div>
-                    <p>Web development is the process of building and maintaining websites and web applications. It involves a combination of technical skills, such as programming languages, databases, and software frameworks, as well as creative skills, such as design and user experience.</p>
+                    <p style="color: white;">Web development is the process of building and maintaining websites and web applications. It involves a combination of technical skills, such as programming languages, databases, and software frameworks, as well as creative skills, such as design and user experience.</p>
                     <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center mb-5">
@@ -269,7 +301,7 @@
                         <i class="fab fa-2x fa-android service-icon bg-dark text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Apps Design</h4>
                     </div>
-                    <p>The role of web design in mobile app development is crucial, as it determines how a mobile application should function and ensures that the app is easy to use and intuitive for its users. Web design in mobile app development involves creating a functional layout for the app , including the user interface (UI) and user experience (UX).</p>
+                    <p style="color: white;">The role of web design in mobile app development is crucial, as it determines how a mobile application should function and ensures that the app is easy to use and intuitive for its users. Web design in mobile app development involves creating a functional layout for the app , including the user interface (UI) and user experience (UX).</p>
                     <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center mb-5">
@@ -277,23 +309,23 @@
                         <i class="fab fa-2x fa-apple service-icon bg-dark text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Apps Development</h4>
                     </div>
-                    <p>Mobile app development is the process of creating software applications that run on mobile devices such as smartphones and tablets. It involves designing, building, testing, and deploying mobile apps that meet the needs of users.</p>
+                    <p style="color: white;">Mobile app development is the process of creating software applications that run on mobile devices such as smartphones and tablets. It involves designing, building, testing, and deploying mobile apps that meet the needs of users.</p>
                     <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-search service-icon bg-dark text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">SEO</h4>
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-dark text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Front-End Development</h4>
                     </div>
-                    <p>SEO stands for "Search Engine Optimization". It is the practice of optimizing a website to rank well on search engines, such as Google, Bing, and Yahoo. The goal of SEO is to increase the quality and quantity of website traffic by ranking higher in search engine results pages (SERPs) for specific keywords or phrases.</p>
+                    <p style="color: white;">Front-end development is the process of building components that interact with users, such as the user interface, buttons, and user-entered data. It involves creating and designing the user interface (UI) and user experience (UX) of websites and web applications .</p>
                     <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-edit service-icon bg-dark text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Content Creating</h4>
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-dark text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Back-End Development</h4>
                     </div>
-                    <p>Content creation in SEO refers to the process of creating and publishing high-quality, engaging, and informative content on a website to attract and retain a clearly defined audience, drive traffic, and ultimately, boost search engine rankings.</p>
+                    <p style="color: white;">Back-end development refers to the server-side of web applications, where the focus is on the functionality, database interactions, and server logic that support the front-end user interface. It involves creating and managing the components that process data and ensure that the application runs smoothly behind the scenes.</p>
                     <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
                 </div>
             </div>
@@ -307,7 +339,7 @@
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+                <h1 class="position-absolute text-uppercase text-dark">My Portfolio</h1>
             </div>
             <div class="row">
                 <div class="col-12 text-center mb-2">
@@ -391,7 +423,7 @@
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+                <h1 class="position-absolute text-uppercase text-dark">Contact Me</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -435,7 +467,7 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center py-5">
             <div class="d-flex justify-content-center mb-4">
                 <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
